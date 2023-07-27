@@ -1,78 +1,80 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Fridge Web Interface</title>
+    <title>Foods Inside Fridge</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #000;
-        color: #fff;
-        margin: 0;
-        padding: 0;
-      }
-      h1, h2 {
-        text-align: center;
-        margin-top: 20px;
-      }
-      h2 {
-        border-bottom: 2px solid #ff1493;
-        padding-bottom: 5px;
-      }
-      ul {
-        list-style: none;
-        padding: 0;
-        text-align: center;
-      }
-      li {
-        margin-bottom: 10px;
-        border: 1px solid #ff1493;
-        border-radius: 8px;
-        padding: 10px;
-        background-color: #333;
-      }
-      p {
-        margin: 5px;
-        text-align: center;
-      }
-      .buttons {
-        text-align: center;
-        margin: 20px;
-      }
-      .button {
-        display: inline-block;
-        background-color: #000;
-        color: #fff;
-        border: 2px solid #ff1493;
-        border-radius: 8px;
-        padding: 10px 20px;
-        margin: 10px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        cursor: pointer;
-      }
-      .button:hover {
-        background-color: #ff1493;
-      }
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #22A7F0;
+            text-transform: uppercase;
+        }
+
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            margin-bottom: 50px; /* Increased bottom spacing */
+        }
+
+        th, td {
+            padding: 12px 18px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #22A7F0;
+            color: #FFF;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        td {
+            border-bottom: 1px solid #999;
+        }
+
+        /* Neon styles */
+        .neon-text {
+            color: #fff;
+        }
     </style>
 </head>
 <body>
-  <h1>Smart Fridge Web Interface</h1>
 
-  <div class="buttons">
-    <a href="inventory.html" class="button">View Inventory</a>
-    <a href="dish_suggestions.html" class="button">Dish Suggestions</a>
-    <a href="expired_items.html" class="button">Expired Items</a>
-  </div>
-
-  <h2>Expiring Soon</h2>
-  <ul id="expiration-list">
-    <li>Milk - 2023-07-30</li>
-    <li>Eggs - 2023-08-05</li>
-    <li>Apples - 2023-08-01</li>
-    <li>Yogurt - 2023-08-03</li>
-  </ul>
+<h1 class="neon-text">Smart Fridge</h1>
+<h1 class="neon-text">
+Temperture = 29.9 C Humidity = 57.0 %</h1>
+    <h1 class="neon-text">Foods Inside Fridge</h1>
+    <table class="neon-bg">
+        <tr>
+            <th>Name</th>
+            <th>Expiry Date</th>
+        </tr>
+        <tr><td>Apple</td><td>02-08-2023</td></tr><tr><td>Milk bikis</td><td>26-08-2023</td></tr><tr><td>Orange</td><td>03-08-2023</td></tr><tr><td>Milk</td><td>17-08-2023</td></tr>
+    </table>
+    <table class="neon-bg">
+        <tr>
+            <th>Recipe</th>
+            <th>Ingredients</th>
+        </tr>
+        <tr><td>Milk bikis Shake</td><td> Milk bikis, Milk</td></tr><tr><td>Apple Milkshake</td><td> Apple, Milk</td></tr><tr><td>Orange Milkshake</td><td> Orange, Milk</td></tr>
+    </table>
 </body>
 </html>
